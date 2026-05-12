@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Health</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; margin: 0; padding: 0; color: #1a1a1a; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<nav style="background:white;border-bottom:1px solid #e5e5e5;padding:0;margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
+  <div style="max-width:860px;margin:0 auto;display:flex;gap:0;padding:0 24px;">
+    <a href="index.html" style="display:inline-block;padding:12px 16px;font-size:13px;font-weight:500;color:#888;text-decoration:none;border-bottom:2px solid transparent;">Brief</a>
+    <a href="health.html" style="display:inline-block;padding:12px 16px;font-size:13px;font-weight:600;color:#1a1a1a;text-decoration:none;border-bottom:2px solid #1a1a1a;">Health</a>
+    <a href="weekly.html" style="display:inline-block;padding:12px 16px;font-size:13px;font-weight:500;color:#888;text-decoration:none;border-bottom:2px solid transparent;">Weekly</a>
+  </div>
+</nav>
+<div style="max-width:860px;margin:0 auto;padding:24px;">
+  <div style="background:white;border-radius:8px;padding:32px 40px;box-shadow:0 1px 4px rgba(0,0,0,0.1);margin-bottom:24px;">
+    <div style="border-bottom:2px solid #eee;padding-bottom:16px;margin-bottom:28px;">
+      <h1 style="margin:0 0 4px 0;font-size:22px;font-weight:600;">Customer Health</h1>
+      <div style="color:#888;font-size:13px;">Generated 5:00 PM UTC, Tuesday May 12, 2026</div>
+    </div>
+
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px;">
+  <div style="flex:1;min-width:120px;background:white;border-radius:6px;padding:16px 20px;box-shadow:0 1px 3px rgba(0,0,0,0.08);text-align:center;">
+      <div style="font-size:28px;font-weight:700;color:#1a1a1a;">27</div>
+      <div style="font-size:12px;color:#888;margin-top:4px;text-transform:uppercase;letter-spacing:0.06em;">Total Active</div>
+    </div>
+  <div style="flex:1;min-width:120px;background:white;border-radius:6px;padding:16px 20px;box-shadow:0 1px 3px rgba(0,0,0,0.08);text-align:center;">
+      <div style="font-size:28px;font-weight:700;color:#dc2626;">2</div>
+      <div style="font-size:12px;color:#888;margin-top:4px;text-transform:uppercase;letter-spacing:0.06em;">Needs Reply</div>
+    </div>
+  <div style="flex:1;min-width:120px;background:white;border-radius:6px;padding:16px 20px;box-shadow:0 1px 3px rgba(0,0,0,0.08);text-align:center;">
+      <div style="font-size:28px;font-weight:700;color:#dc2626;">2</div>
+      <div style="font-size:12px;color:#888;margin-top:4px;text-transform:uppercase;letter-spacing:0.06em;">Overdue</div>
+    </div>
+  <div style="flex:1;min-width:120px;background:white;border-radius:6px;padding:16px 20px;box-shadow:0 1px 3px rgba(0,0,0,0.08);text-align:center;">
+      <div style="font-size:28px;font-weight:700;color:#dc2626;">8</div>
+      <div style="font-size:12px;color:#888;margin-top:4px;text-transform:uppercase;letter-spacing:0.06em;">Action Items</div>
+    </div>
+</div>
+
+    <div style="margin-bottom:36px;">
+  <div style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#888;margin-bottom:16px;padding-bottom:6px;border-bottom:1px solid #eee;">Needs Reply</div>
+  <div style="border-left:3px solid #dc2626;background:#fff5f5;border-radius:0 6px 6px 0;padding:14px 18px;margin-bottom:12px;">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px;">
+        <strong style="font-size:15px;">Maximus</strong>
+        <span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dcfce7;color:#15803d;">Hypercare: Active</span>
+        <span style="font-size:12px;color:#888;">$20,800</span>
+      </div>
+      <div style='font-size:13px;color:#444;margin-bottom:4px;'>Customer Confirms Live with Products</div>
+      
+      <div style="font-size:12px;color:#999;margin-top:6px;">Last inbound: May 8</div>
+    </div>
+<div style="border-left:3px solid #dc2626;background:#fff5f5;border-radius:0 6px 6px 0;padding:14px 18px;margin-bottom:12px;">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px;">
+        <strong style="font-size:15px;">Zest.ai</strong>
+        <span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#f3e8ff;color:#7c3aed;">Pre-Sales: Pending Close</span>
+        <span style="font-size:12px;color:#888;">$0</span>
+      </div>
+      <div style='font-size:13px;color:#444;margin-bottom:4px;'>Customer Requests Retro Test Details</div>
+      
+      <div style="font-size:12px;color:#999;margin-top:6px;">Last inbound: May 6</div>
+    </div>
+</div>
+    <div style="margin-bottom:36px;">
+  <div style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#888;margin-bottom:16px;padding-bottom:6px;border-bottom:1px solid #eee;">Overdue Follow-ups</div>
+  <div style="border-left:3px solid #d97706;background:#fffbeb;border-radius:0 6px 6px 0;padding:14px 18px;margin-bottom:12px;">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px;">
+        <strong style="font-size:15px;">Invigorate Health</strong>
+        <span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">Hypercare: In Production</span>
+        <span style="font-size:12px;color:#888;">$14,500</span>
+        <span style="font-size:12px;color:#d97706;font-weight:600;">13 days overdue</span>
+      </div>
+      <div style='font-size:13px;color:#444;margin-bottom:4px;'>Payment Structure and Launch Timeline Discussion</div>
+      
+    </div>
+<div style="border-left:3px solid #d97706;background:#fffbeb;border-radius:0 6px 6px 0;padding:14px 18px;margin-bottom:12px;">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px;">
+        <strong style="font-size:15px;">DrWell</strong>
+        <span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#f3f4f6;color:#6b7280;">Planning</span>
+        <span style="font-size:12px;color:#888;">$10,500</span>
+        <span style="font-size:12px;color:#d97706;font-weight:600;">20 days overdue</span>
+      </div>
+      <div style='font-size:13px;color:#444;margin-bottom:4px;'>Pricing Path Decision Needed</div>
+      
+    </div>
+</div>
+    <div style="margin-bottom:36px;">
+  <div style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#888;margin-bottom:16px;padding-bottom:6px;border-bottom:1px solid #eee;">All Accounts</div>
+  <div style="overflow-x:auto;">
+  <table style="width:100%;border-collapse:collapse;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
+    <thead>
+      <tr style="background:#f5f5f5;">
+        <th style="padding:8px 12px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#888;border-bottom:1px solid #e5e5e5;">Client</th>
+        <th style="padding:8px 12px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#888;border-bottom:1px solid #e5e5e5;">Status</th>
+        <th style="padding:8px 12px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#888;border-bottom:1px solid #e5e5e5;">Next Follow-up</th>
+        <th style="padding:8px 12px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#888;border-bottom:1px solid #e5e5e5;">Waiting On</th>
+        <th style="padding:8px 12px;text-align:right;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#888;border-bottom:1px solid #e5e5e5;">ACV</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#fff5f5;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Zest.ai</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#f3e8ff;color:#7c3aed;">Pre-Sales: Pending Close</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 13</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Tom to reply</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">—</td>
+    </tr>
+<tr style="background:#fff5f5;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Maximus</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dcfce7;color:#15803d;">Hypercare: Active</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 22</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Tom to reply</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$20,800</td>
+    </tr>
+<tr style="background:#fffbeb;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">DrWell</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#f3f4f6;color:#6b7280;">Planning</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Apr 22</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$10,500</td>
+    </tr>
+<tr style="background:#fffbeb;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Invigorate Health</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">Hypercare: In Production</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Apr 29</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$14,500</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">SoloSafe Labs</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dcfce7;color:#15803d;">Hypercare: Active</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 12</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$7,000</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">CollectiveOS</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">In Implementation</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 13</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$6,000</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Snappy Scripts</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">In Implementation</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 13</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$6,150</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Firenze</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">Hypercare: In Production</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 19</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">—</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Excel Medical</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">In Implementation</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 15</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$58,800</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">DermatologistOnCall</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">In Implementation</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 21</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$68,955</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Curie</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">Hypercare: In Production</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 20</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$21,750</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Telegra MD</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">In Implementation</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 15</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$81,000</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Rimo Health</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">In Implementation</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 15</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$25,800</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Uniloop</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#f3f4f6;color:#6b7280;">Planning</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 13</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$67,350</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">GoRocky</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">In Implementation</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 15</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$15,000</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Daniel Global</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">In Implementation</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 21</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$23,800</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Patriotic Telehealth</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">In Implementation</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 18</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$3,975</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Care Directives</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#fee2e2;color:#dc2626;">Stalled</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 20</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$2,340</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">CareExpand</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#f3e8ff;color:#7c3aed;">Pre-Sales: Pending Close</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 15</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">—</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Longevity Meds</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">In Implementation</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 19</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$6,000</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">White Wings Consuling, LLC</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dcfce7;color:#15803d;">Hypercare: Active</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 22</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$3,000</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">One To One Health</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dcfce7;color:#15803d;">Hypercare: Active</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 22</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$13,320</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Juzogo</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">Hypercare: In Production</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 22</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$7,000</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">CyberInsurance.com</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">In Implementation</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 19</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$4,200</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Fuse Health</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#dbeafe;color:#1d4ed8;">In Implementation</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 20</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$4,000</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Query Health</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#fee2e2;color:#dc2626;">Stalled</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 20</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">—</td>
+    </tr>
+<tr style="background:white;">
+      <td style="padding:10px 12px;font-size:13px;font-weight:600;">Vitaal Health</td>
+      <td style="padding:10px 12px;font-size:13px;"><span style="display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;background:#f3f4f6;color:#6b7280;">Planning</span></td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">May 18</td>
+      <td style="padding:10px 12px;font-size:13px;color:#555;">Customer response</td>
+      <td style="padding:10px 12px;font-size:13px;color:#888;text-align:right;">$14,500</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+    <div style="margin-bottom:36px;">
+  <div style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#888;margin-bottom:16px;padding-bottom:6px;border-bottom:1px solid #eee;">Open Action Items</div>
+  <div style="background:white;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.08);padding:16px 20px;margin-bottom:12px;">
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#888;margin-bottom:8px;">Daniel Global</div>
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #f0f0f0;">
+          <div style="flex:1;font-size:13px;color:#1a1a1a;line-height:1.5;">Add in AML monitoring configurations</div>
+          <div style="display:flex;gap:8px;align-items:center;flex-shrink:0;">
+            <span style="font-size:11px;padding:2px 7px;border-radius:10px;font-weight:600;background:#fef9c3;color:#b45309;">Medium</span>
+            <span style="font-size:12px;color:#888;"><span style="color:#555;">5/6/2026 17:00:00</span></span>
+          </div>
+        </div>
+<div style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #f0f0f0;">
+          <div style="flex:1;font-size:13px;color:#1a1a1a;line-height:1.5;">add AML monitoring to changelog</div>
+          <div style="display:flex;gap:8px;align-items:center;flex-shrink:0;">
+            <span style="font-size:11px;padding:2px 7px;border-radius:10px;font-weight:600;background:#fef9c3;color:#b45309;">Medium</span>
+            <span style="font-size:12px;color:#888;"><span style="color:#555;">5/11/2026 17:00:00</span></span>
+          </div>
+        </div>
+    </div>
+<div style="background:white;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.08);padding:16px 20px;margin-bottom:12px;">
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#888;margin-bottom:8px;">DrWell</div>
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #f0f0f0;">
+          <div style="flex:1;font-size:13px;color:#1a1a1a;line-height:1.5;">Send welcome info, and KOC scheduling email</div>
+          <div style="display:flex;gap:8px;align-items:center;flex-shrink:0;">
+            <span style="font-size:11px;padding:2px 7px;border-radius:10px;font-weight:600;background:#fef9c3;color:#b45309;">Medium</span>
+            <span style="font-size:12px;color:#888;"><span style="color:#555;">5/10/2026 17:00:00</span></span>
+          </div>
+        </div>
+    </div>
+<div style="background:white;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.08);padding:16px 20px;margin-bottom:12px;">
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#888;margin-bottom:8px;">Excel Medical</div>
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #f0f0f0;">
+          <div style="flex:1;font-size:13px;color:#1a1a1a;line-height:1.5;">Investigate operations account password</div>
+          <div style="display:flex;gap:8px;align-items:center;flex-shrink:0;">
+            <span style="font-size:11px;padding:2px 7px;border-radius:10px;font-weight:600;background:#fee2e2;color:#dc2626;">High</span>
+            <span style="font-size:12px;color:#888;"><span style="color:#555;">—</span></span>
+          </div>
+        </div>
+<div style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #f0f0f0;">
+          <div style="flex:1;font-size:13px;color:#1a1a1a;line-height:1.5;">Review the configuration customer provided</div>
+          <div style="display:flex;gap:8px;align-items:center;flex-shrink:0;">
+            <span style="font-size:11px;padding:2px 7px;border-radius:10px;font-weight:600;background:#fef9c3;color:#b45309;">Medium</span>
+            <span style="font-size:12px;color:#888;"><span style="color:#555;">—</span></span>
+          </div>
+        </div>
+    </div>
+<div style="background:white;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.08);padding:16px 20px;margin-bottom:12px;">
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#888;margin-bottom:8px;">GoRocky</div>
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #f0f0f0;">
+          <div style="flex:1;font-size:13px;color:#1a1a1a;line-height:1.5;">In next outreach check to see if these jobs are live and if they have dropped crosscheck</div>
+          <div style="display:flex;gap:8px;align-items:center;flex-shrink:0;">
+            <span style="font-size:11px;padding:2px 7px;border-radius:10px;font-weight:600;background:#fef9c3;color:#b45309;">Medium</span>
+            <span style="font-size:12px;color:#888;"><span style="color:#555;">5/14/2026 17:00:00</span></span>
+          </div>
+        </div>
+    </div>
+<div style="background:white;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.08);padding:16px 20px;margin-bottom:12px;">
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#888;margin-bottom:8px;">Maximus</div>
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #f0f0f0;">
+          <div style="flex:1;font-size:13px;color:#1a1a1a;line-height:1.5;">Draft Miro Workflow and attach to Account details doc</div>
+          <div style="display:flex;gap:8px;align-items:center;flex-shrink:0;">
+            <span style="font-size:11px;padding:2px 7px;border-radius:10px;font-weight:600;background:#fef9c3;color:#b45309;">Medium</span>
+            <span style="font-size:12px;color:#888;"><span style="color:#555;">4/23/2026 17:00:00</span></span>
+          </div>
+        </div>
+    </div>
+<div style="background:white;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.08);padding:16px 20px;margin-bottom:12px;">
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#888;margin-bottom:8px;">Telegra MD</div>
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #f0f0f0;">
+          <div style="flex:1;font-size:13px;color:#1a1a1a;line-height:1.5;">send touchbase with dev</div>
+          <div style="display:flex;gap:8px;align-items:center;flex-shrink:0;">
+            <span style="font-size:11px;padding:2px 7px;border-radius:10px;font-weight:600;background:#fef9c3;color:#b45309;">Medium</span>
+            <span style="font-size:12px;color:#888;"><span style="color:#555;">5/11/2026 17:00:00</span></span>
+          </div>
+        </div>
+    </div>
+</div>
+
+    <div style="border-top:1px solid #eee;padding-top:16px;margin-top:8px;font-size:12px;color:#bbb;text-align:center;">
+      Updated 5:00 PM UTC, Tuesday May 12, 2026
+    </div>
+  </div>
+</div>
+</body>
+</html>
