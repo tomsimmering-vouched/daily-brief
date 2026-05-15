@@ -1,34 +1,417 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weekly Debrief</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; margin: 0; padding: 0; color: #1a1a1a; }
-  .container { max-width: 860px; margin: 0 auto; background: white; border-radius: 8px; padding: 48px 40px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); margin-top: 24px; margin-bottom: 24px; }
-  .header { border-bottom: 2px solid #eee; padding-bottom: 16px; margin-bottom: 32px; }
-  .header h1 { margin: 0 0 4px 0; font-size: 22px; font-weight: 600; }
-  .header .subtitle { color: #888; font-size: 13px; }
-  .placeholder { color: #aaa; font-size: 15px; line-height: 1.6; }
+  body { font-family: Georgia, "Times New Roman", serif; background: #ffffff; color: #1a1a1a; margin: 0; padding: 0; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 48px 32px; }
+  .header { margin-bottom: 32px; }
+  .header-date { font-size: 12px; color: #888; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 6px 0; }
+  .header-greeting { font-size: 22px; font-weight: normal; color: #1a1a1a; margin: 0; }
+  .section { margin-bottom: 36px; }
+  .section-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #888; border-bottom: 1px solid #e0e0e0; padding-bottom: 6px; margin-bottom: 16px; margin-top: 28px; }
+  .milestone-box { border-left: 3px solid #1a1a1a; padding: 10px 16px; margin-bottom: 16px; background: #f9f9f9; }
+  .milestone-label { font-family: "Courier New", Courier, monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #555; }
+  .item { margin-bottom: 16px; }
+  .item-meta { font-family: "Courier New", Courier, monospace; font-size: 12px; color: #555; }
+  .item-body { font-size: 14px; line-height: 1.65; margin-top: 3px; }
+  .item-action { font-size: 13px; color: #1a1a1a; margin-top: 3px; }
+  .urgent { font-weight: bold; }
+  .alert-box { border-left: 3px solid #1a1a1a; padding: 10px 16px; margin-bottom: 16px; background: #f9f9f9; }
+  .group-label { font-family: "Courier New", Courier, monospace; font-size: 12px; font-weight: bold; color: #1a1a1a; margin: 14px 0 6px 0; }
+  .muted { color: #888; font-size: 13px; }
+  .focus-box { border: 1px solid #e0e0e0; padding: 14px 18px; margin-bottom: 16px; }
+  .focus-label { font-family: "Courier New", Courier, monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #888; margin-bottom: 6px; }
+  .reminder-box { background: #f5f5f5; padding: 10px 16px; font-size: 13px; margin-top: 8px; }
+  hr { border: none; border-top: 1px solid #e0e0e0; margin: 28px 0; }
+  .footer { font-size: 11px; color: #bbb; text-align: center; padding-top: 24px; border-top: 1px solid #e8e8e8; letter-spacing: 0.05em; }
+  a { color: #1a1a1a; text-decoration: underline; }
 </style>
 </head>
 <body>
-<nav style="background:white;border-bottom:1px solid #e5e5e5;padding:0;margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
-  <div style="max-width:860px;margin:0 auto;display:flex;gap:0;padding:0 24px;">
-    <a href="index.html" style="display:inline-block;padding:12px 16px;font-size:13px;font-weight:500;color:#888;text-decoration:none;border-bottom:2px solid transparent;">Brief</a>
-    <a href="health.html" style="display:inline-block;padding:12px 16px;font-size:13px;font-weight:500;color:#888;text-decoration:none;border-bottom:2px solid transparent;">Health</a>
-    <a href="weekly.html" style="display:inline-block;padding:12px 16px;font-size:13px;font-weight:600;color:#1a1a1a;text-decoration:none;border-bottom:2px solid #1a1a1a;">Weekly</a>
-  </div>
-</nav>
-<div style="padding:24px;">
-<div class="container">
+<div class="wrap">
+
   <div class="header">
-    <h1>Weekly Debrief</h1>
-    <div class="subtitle">End of week summary</div>
+    <div class="header-date">Week of May 11 &ndash; 15, 2026</div>
+    <div class="header-greeting">Good afternoon, Tom. Here is your week.</div>
   </div>
-  <p class="placeholder">No debrief available yet. Check back Friday.</p>
-</div>
+
+  <hr>
+
+  <div class="section">
+    <div class="section-label">Milestones This Week</div>
+    <p class="muted">No go-lives or handovers this week. Two new kickoffs: DrWell (5/12) and Vitaal Health (5/11 internal handoff sync).</p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <div class="section-label">What Moved This Week</div>
+
+    <div class="item">
+      <div class="item-meta">DrWell &mdash; In Implementation</div>
+      <div class="item-body">Kicked off 5/12 with Jacob leading the integration. Tom sent the welcome email 5/13. Awaiting customer input on target go-live date and milestones. Next follow-up: 5/22.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Vitaal Health &mdash; Planning</div>
+      <div class="item-body">Internal handoff sync held Monday (Tom Walsh, Windsor Tanner). Team is facilitating a 2FA password reset for the customer before testing can begin. Project created 5/11. Next follow-up: 5/22.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Rimo Health &mdash; In Implementation</div>
+      <div class="item-body">Tom sent the kickoff recap and implementation planner on 5/15. Customer is in a two-week dev sprint targeting end-of-May go-live. Follow-up due today &mdash; check in on sprint progress Monday.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Snappy Scripts &mdash; In Implementation</div>
+      <div class="item-body">Customer signed the DocuSign for the SSN addendum on 5/14. Implementation now unblocked. Target completion: week of June 8. Customer will reach out when testing begins.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">CareExpand &mdash; Pre-Sales: Pending Close</div>
+      <div class="item-body">Customer requested contract revisions on 5/13. Tom followed up 5/15 with IAL2 demo feedback. Awaiting CFO feedback on payment terms and contractual clauses.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">CollectiveOS &mdash; In Implementation</div>
+      <div class="item-body">Customer confirmed integration timeline on 5/13. Active contact maintained. Next follow-up: 5/22.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Excel Medical &mdash; In Implementation</div>
+      <div class="item-body">Weekly technical sync held Thursday with the full Excel Medical team (Silvan, Gabe, et al.). Backend refactoring and API work progressing. Design approval still pending before dev moves forward.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">GoRocky &mdash; In Implementation</div>
+      <div class="item-body">Tom sent a follow-up on 5/15 checking integration status and go-live path. Last inbound was 3/25 &mdash; this is a long-silent account. Legal review thread still active. Next follow-up: today was the due date.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Telegra MD &mdash; In Implementation</div>
+      <div class="item-body">Tom sent an update request on 5/15. Planned go-live (5/8) has passed with no status from the customer. Ongoing follow-up on CrossCheck API and DOB step-up workflow. High ACV ($81,000) &mdash; flag if no response by Monday.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">BHG Customer Portal &mdash; Pre-Sales / Dan Hawkins</div>
+      <div class="item-body">Active thread with Dan on next steps for phone vs. email jobs. Dan sent a thread update 5/14. Follow up with Dan early next week.</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <div class="section-label">What Stalled</div>
+
+    <div class="item">
+      <div class="item-meta urgent">Invigorate Health &mdash; Hypercare: In Production &mdash; ACV $14,500</div>
+      <div class="item-body">No inbound since 4/17. Follow-up was due 4/29. Customer is onboarding clients and running a national marketing campaign but has gone silent on the payment structure discussion. Multiple follow-ups sent without response.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Telegra MD &mdash; In Implementation &mdash; ACV $81,000</div>
+      <div class="item-body">Planned go-live (5/8) passed. Last inbound 4/21. Update request sent today. If no response by Monday, this needs escalation.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Care Directives &mdash; Stalled &mdash; ACV $2,340</div>
+      <div class="item-body">No inbound on record. Last outbound 5/11. Go-live target was 2/27. Tracker status: Stalled. No customer engagement since February.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Zest.ai &mdash; Pre-Sales: Pending Close</div>
+      <div class="item-body">Customer requested retro test details on 5/6. Reply was overdue as of 5/13. No ACV recorded yet but deal is pending close. Tom had a calendar block to send the reply this week &mdash; confirm it went out.</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <div class="section-label">Needs Attention Monday</div>
+
+    <div class="alert-box">
+      <div class="item-meta urgent">Invigorate Health &mdash; Reply overdue since 4/29</div>
+      <div class="item-body">Last contact 4/22. Subject: "Payment Structure and Launch Timeline Discussion." Send a direct re-engagement. This is the longest overdue active account.</div>
+    </div>
+
+    <div class="alert-box">
+      <div class="item-meta urgent">Telegra MD &mdash; Go-live passed 5/8, no status</div>
+      <div class="item-body">Follow-up sent today. If no reply by Monday EOD, escalate or flag to Sharon. $81K ACV cannot sit unmonitored.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">DermatologistOnCall &mdash; Open action item</div>
+      <div class="item-body">Send the post-meeting email with military ID information. This was flagged as a "To Do" from the 5/14 meeting. Due date was 5/14 &mdash; overdue.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Rimo Health &mdash; Follow-up due today</div>
+      <div class="item-body">Sprint update check-in. Two-week sprint targeting end-of-May. If not sent Friday, send Monday.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Patriotic Telehealth &mdash; Follow-up due 5/18</div>
+      <div class="item-body">Beta phase planned end of May. Check on dev progress.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Zest.ai meeting &mdash; Monday 12:30pm CT</div>
+      <div class="item-body">Zest.ai x Vouched Commercials and Testing Discussions &mdash; confirmed on calendar. Confirm retro test reply was sent before this call.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Knowledge Stock Registry &mdash; Due Monday 5/18</div>
+      <div class="item-body">Carried over from 5/12 and 5/13. From Tom/Sharon 1:1 4/27. Complete during morning quiet hours.</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <div class="section-label">Wins</div>
+
+    <div class="item">
+      <div class="item-body"><strong>Snappy Scripts SSN addendum signed</strong> &mdash; Customer signed DocuSign 5/14, unblocking the implementation. Target: June 8.</div>
+    </div>
+    <div class="item">
+      <div class="item-body"><strong>DrWell kicked off</strong> &mdash; New implementation started 5/12. Welcome email sent. Integration lead identified on customer side (Jacob).</div>
+    </div>
+    <div class="item">
+      <div class="item-body"><strong>Vitaal Health kickoff sync held</strong> &mdash; Internal handoff sync Monday. Planning underway.</div>
+    </div>
+    <div class="item">
+      <div class="item-body"><strong>Rimo Health kickoff recap sent</strong> &mdash; Good follow-through post-kickoff. Sprint underway, end-of-May target in place.</div>
+    </div>
+    <div class="item">
+      <div class="item-body"><strong>Tom cleared on-call rotation</strong> &mdash; PagerDuty confirmed off-call Thursday 5/14.</div>
+    </div>
+    <div class="item">
+      <div class="item-body"><strong>Linear VOU-6086 resolved</strong> &mdash; Feature request "Auto-close" marked Done by engineering Thursday night.</div>
+    </div>
+    <div class="item">
+      <div class="item-body"><strong>CareExpand momentum</strong> &mdash; Pre-sales deal moving. IAL2 demo feedback sent, contract revisions in progress.</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <div class="section-label">Meetings This Week</div>
+
+    <div class="item">
+      <div class="item-meta">Mon 5/11 &mdash; Tom / Sharon 1:1 (internal)</div>
+      <div class="item-body">Weekly 1:1 with manager.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Mon 5/11 &mdash; Vitaal Internal Handoff Sync (internal)</div>
+      <div class="item-body">Organized by Tom Walsh. Handoff of the Vitaal Health account to Tom Simmering.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Mon 5/11 &mdash; Zoey / Tom &mdash; Snowflake + Sheets (internal)</div>
+      <div class="item-body">Zoey taught Tom how to connect Sheets to Snowflake. Data infrastructure session.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Tue 5/12 &mdash; 30 min with Johnny (Wizlo)</div>
+      <div class="item-body">Meeting with Johnny Burt at Wizlo. Context unclear from email alone &mdash; Fireflies recap captured.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Wed 5/13 &mdash; Customer Success Weekly Team Meeting (internal)</div>
+      <div class="item-body">Sharon-led CS team meeting. Sharon's EOW summary for 5/8 was distributed mid-week.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Wed 5/13 &mdash; CTE Weekly Check-In (internal)</div>
+      <div class="item-body">Customer Testing Environment weekly status check-in with Holly, Zoey, and team.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Wed 5/13 &mdash; Sequoia Open Enrollment Kick Off (all-hands)</div>
+      <div class="item-body">Vouched benefits open enrollment for 2026-2027, organized by Robyn Jones. Enrollment is now live.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Thu 5/14 &mdash; Excel Medical &lt;&gt; Vouched Technical Sync (external)</div>
+      <div class="item-body">Weekly sync with full Excel Medical team. Backend API work in progress, awaiting design approval. Fireflies recap captured.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Thu 5/14 &mdash; Sprint Demos (internal/eng)</div>
+      <div class="item-body">Biweekly engineering sprint demos. Recorded (3 recordings saved to Drive).</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Thu 5/14 &mdash; Abstractive Review (internal &mdash; Brandon Ashiedu)</div>
+      <div class="item-body">Internal review of Abstractive Health account with Brandon. Fireflies recap shows customer has a 2FA error on their account.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Thu 5/14 &mdash; Vouched x Bluechew VIDV / CC Review (external)</div>
+      <div class="item-body">Dan Hawkins organized. Bluechew team (meds.com) asked detailed questions about CrossCheck confidence scoring, DOB-only verification, and ID + facial scan logic. Fireflies recap captured.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Thu 5/14 &mdash; AI Assistant Weekly Check In (internal)</div>
+      <div class="item-body">Zoey-organized weekly AI tooling check-in. AI Tooling Office Hours on Wednesday was cancelled.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Fri 5/15 &mdash; Gerard / Mitch (internal)</div>
+      <div class="item-body">Internal meeting with Gerard LeConte and Mitch Kosowski. Fireflies recap captured. Gerard subsequently emailed about the Epic integration follow-up.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Fri 5/15 &mdash; Abstractive Health (Vince/Zack) x Sharon Shi x Vouched (external)</div>
+      <div class="item-body">Sharon-led pre-sales call with the Abstractive Health founders. Brandon also attended. Fireflies recap in. This appears to be a pre-sales or expansion conversation, not an implementation meeting.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Fri 5/15 &mdash; AHS Implementation Planning (internal)</div>
+      <div class="item-body">Gerard organized with Sharon, Dan, and Steve Goldstein. Internal planning session.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Fri 5/15 &mdash; SFTP Quick Sync (internal &mdash; Tom Walsh)</div>
+      <div class="item-body">Tom requested a quick overview of SFTP protocol with Tom Walsh. Learning session.</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <div class="section-label">Your Board &mdash; This Week's Focus</div>
+    <div class="focus-box">
+      <div class="focus-label">Focus Item</div>
+      <div class="item-body"><strong>Review and update knowledge stock registry</strong> &mdash; Daily Task</div>
+      <div class="item-body" style="margin-top:8px;">This came out of the Tom/Sharon 1:1 on 4/27 and has been carried over from 5/12 and 5/13 without being completed. It is due Monday 5/18. Get it done in the morning before the Zest.ai call. It is the kind of task that keeps getting pushed because it is not urgent, but the ask came from Sharon directly.</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <div class="section-label">Looking Ahead</div>
+
+    <div class="item">
+      <div class="item-meta">Mon 5/18 &mdash; Zest.ai x Vouched Commercials and Testing Discussions &mdash; 12:30pm CT</div>
+      <div class="item-body">On calendar. Confirm the retro test details reply was sent before this call.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Mon 5/18 &mdash; Patriotic Telehealth follow-up due</div>
+      <div class="item-body">Beta phase planned end of May. Check on dev progress.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Tue 5/19 &mdash; Firenze, Longevity Meds, Uniloop follow-ups due</div>
+      <div class="item-body">Cluster of follow-ups due week of 5/19. Plan accordingly.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Wed 5/20 &mdash; Curie, Fuse Health, Care Directives follow-ups due</div>
+      <div class="item-body">Care Directives is stalled &mdash; consider whether to escalate or close.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Thu 5/21 &mdash; Vouched x Bloxcross Verification/Configuration Review &mdash; 12:00pm CT</div>
+      <div class="item-body">Invitation from Brandon Ashiedu. New meeting on calendar.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Mon 6/29 &mdash; Eden Health POC Check-in (ASYNC)</div>
+      <div class="item-body">Sharon created this placeholder calendar event this week. Note for context.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">DermatologistOnCall &mdash; Reconvene scheduled for 5/27</div>
+      <div class="item-body">Go-live target: first half of June. Military ID email still needs to go out.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Rimo Health &mdash; End-of-May go-live target</div>
+      <div class="item-body">Two-week sprint started this week. If on track, expect go-live around 5/29.</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <hr>
+
+  <div class="section">
+    <div class="section-label">End of Week Report</div>
+    <p style="font-size: 13px; color: #888; margin-bottom: 20px;">Pre-filled where possible. Review and complete before sending to Sharon.</p>
+
+    <div class="item">
+      <div class="item-meta">Number of Customer Meetings</div>
+      <div class="item-body">4 (30 min with Johnny / Wizlo on Tue; Excel Medical Technical Sync on Thu; Vouched x Bluechew VIDV/CC Review on Thu; Abstractive Health x Sharon on Fri)</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Priorities for Next Week</div>
+      <div class="item-body" style="white-space: pre-line;">&gt; Customer Follow-ups &mdash; Invigorate Health ($14,500, overdue since 4/29), Telegra MD ($81,000, go-live missed 5/8), Zest.ai (retro test reply overdue)
+&gt; Follow-ups due Monday &mdash; Rimo Health (sprint check-in), Patriotic Telehealth (beta progress)
+&gt; Action items &mdash; DermatologistOnCall military ID email (overdue from 5/14), GoRocky jobs live check
+&gt; Task &mdash; Review and update knowledge stock registry (due 5/18, from Sharon 1:1)</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">SFDC Opportunity Updates</div>
+      <div class="item-body" style="white-space: pre-line; color: #888;">[ Review Salesforce and add any new opps, closed won, or value changes ]
+
+Note: CareExpand pre-sales meeting with Sharon this week &mdash; check if an opp exists. BHG Customer Portal Integration (Dan Hawkins) &mdash; confirm opp status. Zest.ai pending close meeting on Monday.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Highlights</div>
+      <div class="item-body" style="white-space: pre-line;">&gt; Snappy Scripts SSN addendum signed 5/14 &mdash; implementation unblocked, target June 8
+&gt; DrWell kicked off 5/12 with integration lead confirmed on customer side
+&gt; Vitaal Health internal handoff completed Monday, planning underway
+&gt; Rimo Health kickoff recap delivered 5/15, sprint in progress for end-of-May go-live
+&gt; CareExpand pre-sales progressing &mdash; Sharon involved in Abstractive / CareExpand calls this week
+&gt; Linear VOU-6086 (auto-close feature request) resolved and marked Done by engineering</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Blockers / Challenges</div>
+      <div class="item-body" style="white-space: pre-line;">&gt; Invigorate Health &mdash; no inbound since 4/17, overdue since 4/29 ($14,500). Customer appears silent despite marketing launch.
+&gt; Telegra MD &mdash; planned go-live 5/8 passed with no customer update ($81,000). Follow-up sent today.
+&gt; Care Directives &mdash; stalled since February, no inbound on record. May need to close or escalate.
+&gt; Excel Medical &mdash; design approval from customer still blocking dev progress on a $58,800 account.
+&gt; Zest.ai &mdash; retro test reply overdue since 5/13. Pre-sales deal cannot close without it.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">What Didn't Go Well This Week</div>
+      <div class="item-body" style="white-space: pre-line;">&gt; Fraudulent documents reported by Stellantis Financial Services (support ticket, 5/12)
+&gt; Vouched verification error reported by Taralyn Johnson &mdash; active support thread, 11 messages, unresolved
+&gt; 2FA account error reported by Vince Hartman at Abstractive Health (2:06am 5/14)
+&gt; GitHub Actions workflow failure on js-plugin (staleprs.yml) &mdash; occurred multiple days this week</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Needs from Sharon</div>
+      <div class="item-body" style="white-space: pre-line; color: #888;">[ Add any asks or escalations for Sharon ]</div>
+    </div>
+
+    <div class="item">
+      <div class="item-meta">Additional Comments</div>
+      <div class="item-body" style="white-space: pre-line; color: #888;">[ Optional ]</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <div class="section-label">Before You Close</div>
+    <div class="reminder-box">Salesforce EOW update &mdash; log this week's customer activity before closing out for the weekend.</div>
+  </div>
+
+  <div class="footer">Agent 001 &nbsp;&mdash;&nbsp; Weekly delivery, Friday 4:00 pm CT</div>
+
 </div>
 </body>
 </html>
